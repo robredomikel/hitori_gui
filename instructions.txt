@@ -1,0 +1,103 @@
+################################################
+############# INSTRUCTIONS FILE ################
+################################################
+
+
+## HOW TO USE THE PROGRAM ###################################################
+
+- The program is based on 2 classes (gameboard & numbertile) which are given in the template, one, main window module and the main module.
+
+	* GAMEBOARD class: Untouched.
+	* NUMBERTILE class: get_value() public method has been included, it doesn't affect the functionality of the game, I asked Kasper about this change and he gave me permission. It works as a getter for the current value of each number tile, so that later I can fetch that value in MAINWINDOW and print each value in each label, which will be explained later.
+		
+	* MAINWINDOW: It contains a several number of functions, which can be divided in subgroups for better understanding.
+	
+		> ACTIVATE THE LOGICAL BOARD: initBoard, startButtonPressed(it fills the number tiles), checkPowerOfTwo.
+		
+		> DRAW THE GRID: setLabels, setNumberTiles, setBkgndColor, possibleNumbers.
+		
+		> UPDATE OF THE GRID: startButtonPressed, resetButtonPressed, updateNumberTiles, pauseGame.
+		
+		> TIMER: secondPassed, startTimer, resetTimer, updateLCD, deallocateTimers.
+		
+		> COUNTDOWN: secondCount, resetCountdown, stratCountdown, updateCountdown, deallocateNumbers.
+		
+		> AUXILIAR FUNCTIONS: disableButtons, enabledButtons, updateMovements.
+		
+- As required in the project description, the template classes work for the action logic, all my implementations have been focused on GUI. 
+
+- THE GAME: Run the program.	
+	
+	* Before starting the game the user can choose the seed and goal value of the game.
+	
+	* In order to start the game the user needs to press START, the rest of the buttons despite CLOSE will be disabled. 
+	
+	* The user will move the number tiles with the DIRECTION KEYS at the right-down corner.
+	
+	* Whenever the user needs to pause the game to calculate the movement, they will press PAUSE. In the same way, they will press RESUME to continue with the move. During the pause, key buttons will be DISABLED.
+	
+	* If the user wants to reset the game they will have to press RESET.
+	
+	* IMPORTANT: The user will be able to change the seed and goal values after pressing RESET, but they will have to press START again to start with the game. Meanwhile all key buttons and PAUSE button will be disabled.
+	
+	* When WINNING the game; the screen will become GREEN, the user will only be able to reset the game and start it, or close the game.
+	
+	* When LOSING the game; the screen will become RED, the user will only be able to reset the game and start it, or close the game.
+	
+	* NOTE: Some of previous instructions will appear in the text browser of the game, in a neater appearance.
+	
+
+## RULES OF THE GAME ########################################################
+
+- The user must set the SEED and GOAL values before starting the game. 
+
+	* If the goal number entered is 0 or not power of 2, the game will set the goal in 2048.
+
+- When pressing the button START the user will have 10 seconds per each movement, if the user lasts more than that time they will lose the game. 
+
+	* ALSO, after the first 10 movements, this time will be REDUCED to 5 seconds.
+
+- The goal of the game is reaching the goal number by merging the number tiles in the board. If the board gets full of number tiles but the goal number hasn't been met, then the player loses the game.
+
+
+## ADDED FUNCTIONALITIES ####################################################
+
+- MINIMAL REQUIREMENTS:
+
+	* The program asks for the seed value of the random number generator.
+	
+	* The program asks for the goal value or the corresponding power of two.
+	
+	* To play the game, the game grid is given for the user. The squares are graphical rectangles and each square is empty or has one number.
+	
+	* It's possible to select a move direction.
+	
+	* The numbers are moved into the selected direction, and two identical numbers adjacent to each other are summed together.
+	
+	* The game informs about a win/loss.
+	
+	* If the constant value SIZE is changed in GAMEBOARD class, then the grid is correctly adjusted.
+	
+	* It is possible to start the game again (reset). This is possible after the game is over, as well as in the middle of the game.
+	
+- EXTRA FEATURES:
+
+	* Different numbers have different colors. (The squares)
+	
+	* The game has a timer telling the time spent so far. 
+	
+	* A non-GUI feature: The program checks if the given goal is a power of two, or it allows only powers of two as the goal.
+	
+	* The background color of the user interface changes, when the player wins or loses the game.
+	
+	* The game has a pause button, from which the user can pause the timer.
+	
+	* ADDITIONAL: Counter of movements.
+	
+	* ADDITIONAL: Linked to the previous one, there is a countdown of seconds for each movement. And as previously said, if the movements are greater than ten, then the countdown is reduced to 5 seconds.
+	
+-----------------------------------------------------------------------------
+
+
+
+
