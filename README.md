@@ -5,15 +5,15 @@ This project is based on the final structures project required in the course Pro
 - **Note:** This project is **focused** on the implementation of the GUI based on a given logic, that is, reading code and implementing the GUI to manipulate the given code.
 
 ## Table of contents
-- [Description](https://github.com/robredomikel/hitori-gui#description)
-- [How to run](https://github.com/robredomikel/hitori-gui#how-to-run)
-	- [In Qt](https://github.com/robredomikel/hitori-gui#in-qt)
-- [Features](https://github.com/robredomikel/hitori-gui#features) 
-	- [Gameboard](https://github.com/robredomikel/hitori-gui#gameboard)
-	- [Game buttons](https://github.com/robredomikel/hitori-gui#game-buttons)
-	- [Counters](https://github.com/robredomikel/hitori-gui#counters)
-- [Further comments](https://github.com/robredomikel/hitori-gui#further-comments)
-- [References](https://github.com/robredomikel/hitori-gui#references)
+- [Description](https://github.com/robredomikel/hitori_gui#description)
+- [How to run](https://github.com/robredomikel/hitori_gui#how-to-run)
+	- [In Qt](https://github.com/robredomikel/hitori_gui#in-qt)
+- [Features](https://github.com/robredomikel/hitori_gui#features) 
+	- [Gameboard](https://github.com/robredomikel/hitori_gui#gameboard)
+	- [Game buttons](https://github.com/robredomikel/hitori_gui#game-buttons)
+	- [Counters](https://github.com/robredomikel/hitori_gui#counters)
+- [Further comments](https://github.com/robredomikel/hitori_gui#further-comments)
+- [References](https://github.com/robredomikel/hitori_gui#references)
 
 ## Description
 In this project, given the _2048 game_ logic given in the __gameboard__ module, the implementation is based on the __Graphical User Interface__ of this logic in the module __mainwindow__.
@@ -21,7 +21,7 @@ In this project, given the _2048 game_ logic given in the __gameboard__ module, 
 The user could find when running the program  a GUI as the one shown below.
 ![gui1](https://github.com/robredomikel/hitori_gui/blob/main/readme_content/gui_1.PNG)
 
-During this  README file I will mostly **go over some of the most important features** in which the project is based on, rather than the description of each function and their goal, which can be found on the definition of each function in the self-implemented module files. **Rules and context** of the game can be found in the links attached in the [References](https://github.com/robredomikel/finnish-railway-system#references) section.
+During this  README file I will mostly **go over some of the most important features** in which the project is based on, rather than the description of each function and their goal, which can be found on the definition of each function in the self-implemented module files. **Rules and context** of the game can be found in the links attached in the [References](https://github.com/robredomikel/hitori_gui#references) section.
 ## How to run
 As this is a ghapically oriented project, the guidance will be given only in Qt Designer. 
 
